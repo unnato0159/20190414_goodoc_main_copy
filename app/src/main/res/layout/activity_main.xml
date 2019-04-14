@@ -99,14 +99,15 @@
             android:layout_height="35dp"
             android:src="@mipmap/ic_launcher"/>
         <EditText
+            android:id="@+id/search"
             android:layout_weight="1"
             android:paddingLeft="10dp"
             android:background="#00000000"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:hint="병원명 , 질병 키워드로 병원 찾기 "/>
-
         <Button
+            android:id="@+id/searchBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="검색"/>
