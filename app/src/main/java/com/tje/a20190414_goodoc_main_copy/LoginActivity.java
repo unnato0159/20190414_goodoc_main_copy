@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.time.Instant;
+
 public class LoginActivity extends AppCompatActivity {
 
      // id : tjeit , pw : qwer1234 가 입력된 상태로
@@ -35,7 +37,7 @@ public class LoginActivity extends AppCompatActivity {
                 String userPw = userPwEdt.getText().toString();
                 // 두 변수에 들어 있는 값이 원하는 값이 맞다면 ? 메인화면으로 이동
                 // 아니라면 토스트로 에러메세지 발생
-                if(userId.equals("tjeit") && userPw.equals("qwer1234")){
+               /* if(userId.equals("tjeit") && userPw.equals("qwer1234")){
 
                     //아이디와 비번이 모두 올바르다
                     // MainActivity  이동 시켜 주자
@@ -47,7 +49,13 @@ public class LoginActivity extends AppCompatActivity {
                 }else{
                     //위에 조건이 아니라면
                     Toast.makeText(LoginActivity.this, "로그인에 실패 했습니다.\nID/PW를 확인해 주세요", Toast.LENGTH_SHORT).show();
-                }
+                }*/
+             // 입력한 아이디르 들고 메인 액티비티로 이동
+                Intent intent = new Intent(LoginActivity.this,MainActivity.class);
+                //메인액티비티로 갈때 " 사용자 아이디" 라는 꼬리표로 userId 에 들어 있는 값을 들고감
+                intent.putExtra("사용자아이디",userId);
+                startActivity(intent);
+
             }
         });
     }
