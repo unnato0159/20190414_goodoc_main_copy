@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
                 String searchData = search.getText().toString();
                 String searchData1 = String.format("[%s]을 검색합니다.",searchData);
 
-                Toast.makeText(MainActivity.this, searchData, Toast.LENGTH_SHORT).show();
+                //Toast.makeText(MainActivity.this, searchData, Toast.LENGTH_SHORT).show();
                 Toast.makeText(MainActivity.this, searchData1, Toast.LENGTH_SHORT).show();
             }
         });
