@@ -41,6 +41,8 @@ public class LoginActivity extends AppCompatActivity {
                     // MainActivity  이동 시켜 주자
                     Intent intent = new Intent(LoginActivity.this,MainActivity.class);
                     startActivity(intent);
+                    finish();
+
 
                 }else{
                     //위에 조건이 아니라면
